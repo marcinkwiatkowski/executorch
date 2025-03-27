@@ -82,8 +82,6 @@ struct ET_EXPERIMENTAL Stats {
   long aggregate_sampling_timer_start_timestamp = 0;
 };
 
-static constexpr auto kTopp = 0.9f;
-
 inline std::string stats_to_json_string(const Stats& stats) {
   std::stringstream ss;
   ss << "{\"prompt_tokens\":" << stats.num_prompt_tokens << ","
